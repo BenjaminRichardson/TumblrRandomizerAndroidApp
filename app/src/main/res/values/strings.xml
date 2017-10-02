@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Simple Tumblr Viewer</string>
+    <string name="image_filler_text">An image will go here eventually</string>
+    <string name="info_about_image_filler">This will be info about the image</string>
+    <string name="title_activity_testactivity">testactivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tumblr_consumer_key">du3am2LzgIHJNx8VzVQMXsXAcCwBowT6rQh0eV58zr3bJAYrsO</string>
+    <string name="tumblr_secret_key">OZoXOpGmyidazZEbV3AjVvx9cVORXku6j4lOk4XWuLNSPwH40c</string>
+</resources>
