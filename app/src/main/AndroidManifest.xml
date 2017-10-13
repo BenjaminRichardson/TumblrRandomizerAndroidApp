@@ -18,8 +18,9 @@
         </activity>
         <activity android:name=".PostBrowser"
                     android:parentActivityName=".MainActivity">
-
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

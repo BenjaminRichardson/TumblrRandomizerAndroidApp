@@ -7,10 +7,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.benja.JumblrHelpers.PostType;
 import com.example.benja.simpletumblrviewer.R;
 import com.tumblr.jumblr.types.Post;
 
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * Created by Benjamin Richardson on 9/26/2017.
@@ -18,7 +19,7 @@ import java.util.ArrayList;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
 
-    private ArrayList<Post> posts;
+    private List<Post> posts;
 
     public static class PostViewHolder extends RecyclerView.ViewHolder {
         //TODO: make more versatile, set item and retrieve text etc in the view holder
@@ -33,12 +34,17 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         }
     }
 
-    public PostAdapter(ArrayList<Post> posts){
+    public PostAdapter(List<Post> posts){
         this.posts = posts;
     }
 
     @Override
     public PostAdapter.PostViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
+        final PostViewHolder returnVal;
+        PostType viewTypeVal = PostType.values()[viewType];
+        switch (){
+            case(PostType.PHOTO):
+        }
         View v = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.single_image_view,parent,false);
         PostViewHolder pvh = new PostViewHolder(v);
@@ -48,8 +54,16 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
     @Override
     public void onBindViewHolder(PostAdapter.PostViewHolder viewHolder, int position){
+        Post currPost = posts.get(position);
         viewHolder.image.setImageResource(R.drawable.bill_gates);
         viewHolder.desc.setText(posts.get(position).getPostUrl());
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        Post currPost = posts.get(position);
+        PostType type = PostType.valueOf(currPost.getType());
+        return type.ordinal();
     }
 
     @Override
