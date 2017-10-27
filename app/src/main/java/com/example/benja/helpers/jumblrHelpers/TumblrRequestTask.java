@@ -1,8 +1,8 @@
-package com.example.benja.JumblrHelpers;
+package com.example.benja.helpers.jumblrHelpers;
 
 import android.os.AsyncTask;
 
-import com.example.benja.JumblrHelpers.JumblrWorkItems.WorkItem;
+import com.example.benja.helpers.jumblrHelpers.jumblrWorkItems.WorkItem;
 import com.tumblr.jumblr.JumblrClient;
 
 /**

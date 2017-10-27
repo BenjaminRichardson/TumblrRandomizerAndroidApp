@@ -10,11 +10,25 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:onClick="openPostViewer"
         android:text="More!"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/blogInfo"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/blogInfo"
+        app:layout_constraintHorizontal_bias="0.506" />
+
+    <EditText
+        android:id="@+id/blogInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Enter blog URL of form *.tumblr.com"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 

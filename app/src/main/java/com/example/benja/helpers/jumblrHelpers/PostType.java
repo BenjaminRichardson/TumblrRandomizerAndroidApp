@@ -1,4 +1,4 @@
-package com.example.benja.JumblrHelpers;
+package com.example.benja.helpers.jumblrHelpers;
 
 /**
  * Created by Ben Richardson on 10/13/2017.

@@ -2,7 +2,7 @@ package com.example.benja.tumblrPosts;
 
 import android.content.Context;
 
-import com.example.benja.JumblrHelpers.JumblrWorkItems.WorkItem;
+import com.example.benja.helpers.jumblrHelpers.jumblrWorkItems.WorkItem;
 import com.tumblr.jumblr.types.*;
 
 import java.util.*;

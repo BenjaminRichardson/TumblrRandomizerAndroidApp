@@ -8,4 +8,5 @@
     <string name="title_notifications">Notifications</string>
     <string name="tumblr_consumer_key">du3am2LzgIHJNx8VzVQMXsXAcCwBowT6rQh0eV58zr3bJAYrsO</string>
     <string name="tumblr_secret_key">OZoXOpGmyidazZEbV3AjVvx9cVORXku6j4lOk4XWuLNSPwH40c</string>
+    <string name="url_button_id">LinkButton</string>
 </resources>

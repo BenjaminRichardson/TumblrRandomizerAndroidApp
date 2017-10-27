@@ -2,8 +2,8 @@ package com.example.benja.tumblrPosts;
 
 import java.util.*;
 
-import com.example.benja.JumblrHelpers.JumblrWorkItems.PostsRequest;
-import com.example.benja.JumblrHelpers.JumblrWorkItems.WorkItem;
+import com.example.benja.helpers.jumblrHelpers.jumblrWorkItems.PostsRequest;
+import com.example.benja.helpers.jumblrHelpers.jumblrWorkItems.WorkItem;
 import com.tumblr.jumblr.types.Post;
 
 /**

@@ -1,4 +1,4 @@
-package com.example.benja.JumblrHelpers.JumblrWorkItems;
+package com.example.benja.helpers.jumblrHelpers.jumblrWorkItems;
 
 import com.tumblr.jumblr.JumblrClient;
 import com.tumblr.jumblr.types.Post;
